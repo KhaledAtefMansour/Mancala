@@ -1,7 +1,7 @@
 # Mancala
 how to run:
 
-download "whole.py" + data.csv in same folder and run "whole.py"
+download "whole.py" +"save.py"+ data.csv in same folder and run "whole.py"
 
 or
 
