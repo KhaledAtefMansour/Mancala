@@ -1,5 +1,5 @@
 # Mancala
---The binary file is called whole and it works on Linux
+--The binary file is called "whole" and it works on Linux
 
 --main features:
 
