@@ -1,6 +1,30 @@
-current_state=[4,4,4,4,4,4,0,4,4,4,4,4,4,0]
-stealing = int(input("do you want stealing mode ? (yes = press 1, no = press 0)  \n"))
-turn=input("do you want to start ? (yes = enter 'min', no = enter 'max')  \n")
+import save
+import time
+import signal
+
+current_state = [4, 4, 4, 4, 4, 4, 0, 4, 4, 4, 4, 4, 4, 0]
+LEVELS = [1, 4, 7, 10]
+
+load = int(input("do you want to load game ? (yes = press 1, no = press 0)  \n"))
+stealing = 1
+turn = ""
+level = 1
+interrupt_mode = 0
+if load == 1:
+    current_state, stealing, level, interrupt_mode = save.load()
+    turn = 'min'
+
+else:
+    stealing = int(
+        input("do you want stealing mode ? (yes = press 1, no = press 0)  \n"))
+    turn = input(
+        "do you want to start ? (yes = enter 'min', no = enter 'max')  \n")
+    level = int(
+        input("choose level: 1 - 2 - 3 - 4  \n"))-1
+
+    interrupt_mode = int(
+        input("force play method: 0- let the kid take his time\n1-CTRL+C\n2- 30s time limit   \n"))
+
 
  
 while True :
