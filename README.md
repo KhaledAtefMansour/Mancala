@@ -1,5 +1,9 @@
 # Mancala
---The binary file is called "whole" and it works on Linux
+how to run:
+
+download "whole.py" + data.csv in same folder and run "whole.py"
+or
+The exe file that is called "whole" and it works on Linux
 
 --main features:
 
